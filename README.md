@@ -22,6 +22,7 @@ This project predicts whether a student will pass or fail based on attendance, i
 ## Outcome
 - Achieved around 94.44% prediction accuracy
 - Provides early identification of students who may need academic support
+![Student Performance Graph](graph.png)
 
 # Student-Performance-Prediction
 AI project predicting student performance using Python &amp; Logistic Regression
