@@ -1,11 +1,44 @@
 # Student Performance Prediction System
 
-This project predicts whether a student will pass or fail based on attendance, internal marks, and assignment scores using machine learning (Logistic Regression) in Python.
+## Project Overview
+This project focuses on predicting student academic performance (Pass/Fail) using Machine Learning techniques.  
+The system is implemented using Python in Google Colab and applies Logistic Regression for classification.
 
-## Tools
+
+## Problem Statement
+Identifying students at academic risk early can help institutions provide timely support.  
+This project aims to predict whether a student will pass or fail based on academic indicators such as attendance, internal marks, and assignment scores.
+
+## Dataset Creation & Preprocessing
+Due to privacy concerns with real student data, a synthetic dataset was created for learning and demonstration purposes.
+
+### Features Used
+- Attendance (%)
+- Internal Marks
+- Assignment Score
+- Result (Target Variable: 1 = Pass, 0 = Fail)
+
+### Labeling Logic
+- Internal marks were treated as the dominant factor.
+- Students with very low internal marks were labeled as Fail, even if attendance or assignment scores were high.
+- Students with average or high internal marks and at least one additional supporting factor were labeled as Pass.
+- This rule-based labeling ensured consistency for supervised learning.
+
+### Data Separation
+The dataset was split into training and testing sets to evaluate model performance on unseen data.
+
+## Model Used
+- Algorithm: Logistic Regression
+- Type: Supervised Machine Learning (Classification)
+- The model learns the relationship between academic features and student outcomes.
+
+## Implementation Tools
 - Python
 - Google Colab
-- pandas, scikit-learn, matplotlib
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
 
 ## How it works
 1. Dataset creation (60 students with attendance, marks, and assignment scores)
